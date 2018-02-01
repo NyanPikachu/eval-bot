@@ -10,7 +10,7 @@ import aiohttp
 from contextlib import redirect_stdout
 import base64
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('_'))
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('.'))
 bot.remove_command('help')
 
 @bot.event
