@@ -150,7 +150,7 @@ async def require(ctx, *, requirement):
 
 try:
     with open('config.json') as f:
-        token = json.load(f).get('token') or os.environ.get('token')
+        token = json.load(f).get('token') or os.environ.get('TOKEN')
     bot.run(token, reconnect=True)
 except Exception as e:
     print(e)
